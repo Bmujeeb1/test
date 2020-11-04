@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E-comm_css/my_E-COMMERCE.css">
+    <link rel="stylesheet" href="FONT AWESOME/font-awesome/font-awesome.css">
+    <script>
+        var bool = true;
+        function gh(){       
+            if(bool){
+                document.getElementsByClassName("links")[0].style.display="block";
+                document.querySelector(".navn span").className="fa fa-close";
+    
+                bool = false;
+            }
+            else{
+                document.getElementsByClassName("links ")[0].style.display="none";
+                document.querySelector(".navn span").className="fa fa-navicon";
+                bool = true;
+            }
+    
+        }
+    </script>
+</head>
+<body>
+    <header class="parent">
+        <h2>Mbel_Digitalz</h2>
+        <div class="navn" onclick="gh();"><span class="fa fa-navicon"></span></div>
+        <div class="links">
+            <a href="my_e-commerce-proj.html">home</a>
+            <a href="about.html">about</a>
+            <a href="review.html">reviews</a>
+            <a href="products.html">products</a>
+            <a href="contactUs.html">contact</a>
+            
+        </div>
+    </header>
+    <div class="intro">
+        <div>
+            <h1>welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim voluptas ea omnis non veniam deleniti nam fuga, suscipit sit ipsa esse deserunt expedita quas consequuntur incidunt asperiores nemo laboriosam harum vel. Voluptatem repellat nulla quae, illum ex quaerat velit officiis optio laudantium cumque, soluta obcaecati facilis commodi! Dolores, error?</p>
+            
+        </div>
+        <div>
+            <img src="/e_commercer_imgs/cmplt-pc.jpg" alt="">
+        </div>
+    </div>
+    <p class="gob">Getting Organized Better With Mbel_Digitalz</p>
+    <div class="afterwords"></div>
+    <div class="forlast">
+        <div class="part1">
+            <span class="fa fa-hand"></span>
+            <p class="first1">Just What You Need</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio odio blanditiis inventore sint id.</p>
+            
+        </div>
+        <div class="part1">
+            <span class="fa fa-hand"></span>
+            <p class="first1">Responsibly Chosen Materials</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio odio blanditiis inventore sint id.</p>
+            
+        </div>
+        <div class="part1">
+            <span class="fa fa-hand"></span>
+            <p class="first1">A Helping Hand</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio odio blanditiis inventore sint id.</p>
+            
+        </div>
+
+    </div>
+    <div class="forbg">
+        <h3>Sign up for updates, special offers and more. </p>
+        <p>Subscribe to our newsletter </p>
+        <input type="email" placeholder="Email">
+        <button>Subscribe</button>
+    </div>
+    
+</body>
+</html>

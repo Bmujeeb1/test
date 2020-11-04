@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="E-comm_css/contactUs.css">
+    <link rel="stylesheet" href="FONT AWESOME/font-awesome/font-awesome.css">
+<script>
+    var bool = true;
+    function gh(){
+        if(bool){
+            document.getElementsByClassName("links")[0].style.display="block";
+            document.querySelector(".navn span").className="fa fa-close";
+
+            bool = false;
+        }
+        else{
+            document.getElementsByClassName("links ")[0].style.display="none";
+            document.querySelector(".navn span").className="fa fa-navicon";
+            bool = true;
+        }
+
+    }
+</script>
+</head>
+<body>
+    <header class="parent">
+        <h2>Mbel_Digitalz</h2>
+       <div class="navn" onclick="gh();"><span class="fa fa-navicon"></span></div>
+        <div class="links">
+            <a href="my_e-commerce-proj.html">home</a>
+            <a href="about.html">about</a>
+            <a href="review.html">reviews</a>
+            <a href="products.html">products</a>
+            <a href="contactUs.html">contact</a>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quam esse ullam incidunt tempore eos, amet vitae praesentium ipsum hic non pariatur porro atque magni, voluptatem excepturi qui eius assumenda?</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                     <div class="text">
+                         <h3>Address</h3>
+                         <p>Behind Emmanuel Baptist College, <br> Tanke ,Ilorin</p>
+                     </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i> </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+234 (8142099769)</p>
+                        </div>
+                   
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>babdulmujeeb@gmail<br>.com</p>
+                        </div>
+                    
+                </div>
+            </div>    
+                <div class="contactform">
+                    <form action="">
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <span>Full Name</span>
+                            <input type="text" name="" required="required">
+                        </div>
+                        <div class="inputbox">
+                            <span>Email</span>
+                            <input type="text" name="" required="required">
+                        </div>
+                        <div class="inputbox">
+                            <span></span>
+                            <textarea placeholder="Type Your message here" required="required"  ></textarea>
+                        </div>
+                        <div class="inputbox">
+                            
+                            <input class="submit" type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            
+        </div>
+    </section>
+</body>
+</html>

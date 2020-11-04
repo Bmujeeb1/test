@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E-comm_css/review.css">
+    <link rel="stylesheet" href="../FONT AWESOME/font-awesome/font-awesome.css">
+    <script>
+        var bool = true;
+        function gh(){
+            if(bool){
+                document.getElementsByClassName("links")[0].style.display="block";
+                document.querySelector(".navn span").className="fa fa-close";
+    
+                bool = false;
+            }
+            else{
+                document.getElementsByClassName("links ")[0].style.display="none";
+                document.querySelector(".navn span").className="fa fa-navicon";
+                bool = true;
+            }
+    
+        }
+    </script>
+</head>
+<body>
+    <header class="parent">
+        <h2>Mbel_Digitalz</h2>
+        <div class="navn" onclick="gh();"><span class="fa fa-navicon"></span></div>
+        <div class="links">
+            <a href="my_e-commerce-proj.html">home</a>
+            <a href="about.html">about</a>
+            <a href="review.html">reviews</a>
+            <a href="products.html">products</a>
+            <a href="contactUs.html">contact</a>
+        </div>
+    </header>
+    <div><img src="/e_commercer_imgs/McLaren2020.jpg" alt=""></div><br>
+    <h1>REVIEWS</h1>
+    <div class="revs">
+        <div class="rev1"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa suscipit ullam adipisci perspiciatis accusantium ab laborum, delectus ad numquam modi nihil explicabo, consequatur facere.</p> <br><br> <h2>- MBEL</h2></div>
+        <div class="rev2"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsa suscipit ullam adipisci perspiciatis accusantium ab laborum, delectus ad numquam modi nihil explicabo, consequatur facere.</p> <br><br><h2>- JODAK</h2></div>
+    </div>
+</body>
+</html>

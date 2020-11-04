@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E-comm_css/about.css">
+    <link rel="stylesheet" href="FONT AWESOME/font-awesome/font-awesome.css">
+    <script>
+        var bool = true;
+        function gh(){
+            if(bool){
+                document.getElementsByClassName("links")[0].style.display="block";
+                document.querySelector(".navn span").className="fa fa-close";
+    
+                bool = false;
+            }
+            else{
+                document.getElementsByClassName("links ")[0].style.display="none";
+                document.querySelector(".navn span").className="fa fa-navicon";
+                bool = true;
+            }
+    
+        }
+    </script>
+</head>
+<body>
+    <header class="parent">
+        <h2>Mbel_Digitalz</h2>
+        <div class="navn" onclick="gh();"><span class="fa fa-navicon"></span></div>
+        <div class="links">
+            <a href="my_e-commerce-proj.html">home</a>
+            <a href="about.html">about</a>
+            <a href="review.html">reviews</a>
+            <a href="products.html">products</a>
+            <a href="contactUs.html">contact</a>
+            
+        </div>
+    </header>
+<div class="intro">
+    <div>
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim voluptas ea omnis non veniam deleniti nam fuga, suscipit sit ipsa esse deserunt expedita quas consequuntur incidunt asperiores nemo laboriosam harum vel. Voluptatem repellat nulla quae, illum ex quaerat velit officiis optio laudantium cumque, soluta obcaecati facilis commodi! Dolores, error?</p>
+        
+    </div>
+    <div>
+        <img src="/e_commercer_imgs/cmplt-pc.jpg" alt="">
+    </div>
+</div>
+<div class="wwdprnt">
+<p>WHAT WE DO</p><br><br>
+    <div class="wwd">
+        <div class="wwd1">
+            <span class="fa fa-trello"></span>
+            <p>We work with out hardware patners to make gadgets available, pre-installed on PCs in more than 3,000 retailers around the world</p>
+        </div>
+        <div class="wwd2">
+            <span class="fa fa-star"></span>
+            <p>We certify hundreds of PCs and servers from OEMs including DELL,HP and Lenovo, for use in the consumer and commercial sector</p>
+        </div>
+        <div class="wwd3">
+            <span class="fa fa-cloud"></span>
+            <p>We build cloud data for some of world's biggest telecommunications providers. Micrsoft Azure, Google cloud, Oracle cloud and Amazon web services</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
