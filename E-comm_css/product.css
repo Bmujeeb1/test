@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+}
+h2{
+    margin: 0;
+    /* flex: 1; */
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.links{
+    flex: 1;
+    text-align: center;
+    flex-wrap:wrap ;
+}
+.links a{
+    color: #6a6b6d;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+    text-decoration: none;
+    border: 2px solid rgb(68, 219, 212);
+    padding: 2px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+
+}
+span{
+    margin-left: 10px;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.parent img{
+    height: 75vh;
+    min-width: 50%;
+    flex: 1;
+}
+.plain{
+    height: 75vh;
+    background:lightseagreen ;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+.plain h5{
+    /* flex-basis: 50%; */
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding: 20px;
+    /* margin-top: 170px; */
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px ;
+}
+.forprt{
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+
+}
+.forprt img{
+    height: 50vh;
+    margin: 2px;
+}
+.p1, .p2, .p3{
+    /* min-width: 0px; */
+    flex: 1;
+
+}
+.p1 p, .p2 p, .p3 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.part2{
+    background: lightseagreen;
+    padding: 30px;
+}
+.part21{
+    background-image: url(../e_commercer_imgs/cmplt-pc.jpg);
+    height: 65vh;
+    background-size:cover ;
+}
+.yprnt{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.yprnt img{
+    height: 60vh;
+    margin: 10px;
+    }
+.omo1, .omo2, .omo3{
+    flex: 1;
+}
+.usb{
+    display: flex;
+    flex-wrap: wrap;
+}
+.usb img{
+    height: 60vh;
+    min-width: 100%;
+    border-radius: 5px;
+    flex: 1;
+}
+.usb1, .usb2, .usb3{
+    flex: 1;
+    margin: 5px;
+}.usb h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.navn{
+    display:none;
+}
+@media screen and (max-width: 460px){
+    .links{
+        /* display: block; */
+        display: none;
+        min-width: 50%;
+    }
+    .navn{
+        display:block;
+    }
+}
+@media screen and (max-width: 425px){
+    .links a{
+        border: none;
+        
+    }
+}

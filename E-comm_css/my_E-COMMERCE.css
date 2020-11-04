@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    /* flex: 1; */
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.links{
+    flex: 1;
+    text-align: center;
+    flex-wrap:wrap ;
+    
+}
+.links a{
+    color: #6a6b6d;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+    text-decoration: none;
+    border: 2px solid rgb(68, 219, 212);
+    padding: 2px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+
+}
+span{
+    margin-left: 10px;
+}
+.intro{
+    display: flex;
+    padding: 2rem;
+    flex-wrap:wrap ;
+    
+}
+.intro h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: lightseagreen;
+    padding-bottom: 20px;
+}
+.intro p{
+    font-size: 20px;
+}
+.intro >div{
+    margin: 20px;
+    text-align: left;
+    flex: 1;
+    line-height: 2rem;
+}
+.intro > div > div{
+    flex: 1;
+}
+img{
+    height: 75vh;
+    min-width: 90%;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+.gob{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.forlast{
+    display: flex;
+    flex-wrap: wrap; 
+    /* height: 30vh; */
+    justify-content: center;
+}
+.forlast p{
+    text-align: center;
+    font-size: 23px;
+}
+.first1 {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+}
+.part1{
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 2rem;
+    background:  rgb(68, 219, 212);
+    margin: 10px;
+    text-shadow: 0 0 2px black;
+    color: #fff;
+    /* width: 100%; */
+}
+.forbg{
+    background-image: url(../e_commercer_imgs/decoder.jpg   );
+    /* opacity: 80%; */
+    background-size: cover;
+    min-height: 65vh;
+    justify-content: center;        
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.forbg h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+input{
+    height:25px;
+    /* width: 70%; */
+    border: none;
+    padding: 5px;
+    border-radius: 2rem;
+    font-size: 20px;
+    
+}
+button{
+    /* height: 30px; */
+    border: none;
+    padding: 5px;
+    border-radius: 2rem;
+    font-size: 20px;
+    background-color: rgb(8, 145, 138);
+    color: white;
+}
+button:hover{
+    background: rgb(18, 95, 95);
+    transform: scale(1.09);
+}
+.navn{
+    display:none;
+}
+@media screen and (max-width: 460px){
+    .links{
+        /* display: block; */
+        display: none;
+        min-width: 50%;
+    }
+    .navn{
+        display:block;
+    }
+}
+@media screen and (max-width: 425px){
+    .links a{
+        border: none;
+        
+    }
+}
+

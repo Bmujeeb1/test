@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    /* flex: 1; */
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.links{
+    flex: 1;
+    text-align: center;
+    flex-wrap:wrap ;
+    
+}
+.links a{
+    color: #6a6b6d;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+    text-decoration: none;
+    border: 2px solid rgb(68, 219, 212);
+    padding: 2px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+
+}
+span{
+    margin-left: 10px;
+}
+.intro{
+    display: flex;
+    padding: 2rem;
+    flex-wrap:wrap ;
+    align-items: center;
+    
+}
+.intro h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: lightseagreen;
+    padding-bottom: 20px;
+}
+.intro p{
+    font-size:27px;
+}
+.intro >div{
+    margin: 20px;
+    /* text-align: left; */
+    flex: 1;
+    font-size: 20px;
+    line-height: 2rem;
+}
+.intro > div > div{
+    flex: 1;
+}
+img{
+    height:80vh;
+    min-width: 90%;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+.wwdprnt{
+    background: lightseagreen;
+    color: white;
+    padding: 20px;
+}
+.wwdprnt > p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.wwd{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wwd1, .wwd2, .wwd3{
+    text-align: center;
+    margin:0px 40px;
+    line-height: 2rem;
+    font-size: 20px;
+    flex: 1;
+}
+.wwd1 p, .wwd2 p, .wwd3 p{
+    text-align: left;
+}
+
+.navn{
+    display: none;
+}
+@media screen and (max-width: 460px){
+    .links{
+        /* display: block; */
+        display: none;
+        min-width: 50%;
+    }
+    .navn{
+        display:block;
+    }
+}
+@media screen and (max-width: 425px){
+    .links a{
+        border: none;
+        
+    }
+}
